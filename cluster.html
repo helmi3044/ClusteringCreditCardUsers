@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Final Project 4</title>
+</head>
+<body>
+    <div class="form">
+        <div class="navigasi_kiri">
+            <img src="img/hacktiv8-dark.webp">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="cluster.html">Clusters</a></li>
+                <li><a href="index.html">Predict</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </div>
+        <div class="kmeans">
+            <h2>CLUSTERING</h2>
+            <h3>Cluster Pengguna Kartu Kredit dengan Metode KMeans</h3>
+            <h4>1. Transaksi Pembelian vs Pembelian</h4>
+            <img src="img/Transaksi Pembelian vs Pembelian KMeans.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik terlihat dari 4 cluster, cluster Pengguna dengan kredit pembelian tinggi (pink) terdapat 
+                transaksi pembelian sampai melebihi 350 dan pembelian per akun melebihi 40000. Sedangkan untuk ketiga 
+                cluster lainnya pembelian per akun hanya kurang dari 10000</p>
+            <h4>2. Tingkat Frekuensi  Pembelian vs Transaksi Pembelian</h4>
+            <img src="img/Tingkat Frekuensi  Pembelian vs Transaksi Pembelian KMeans.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik terlihat bahwa cluster Pengguna dengan penarikan tunai tinggi (ungu tua) dan cluster Pengguna 
+                level tengah (ungu muda) rata-rata memiliki tingkat frekuensi pembelian mulai dari 0.0 sampai kurang lebih 
+                0.7 dengan transaksi pembelian kurang dari 100.</p>
+            <p>Sedangkan cluster Pengguna kredit hemat (merah) dan cluster Pengguna dengan kredit pembelian tinggi (pink) 
+                rata-rata memiliki tingkat frekuensi pembelian mulai dari 0.3 sampai dengan 1..0 dengan banyaknya transaksi 
+                pembelian bisa mencapai lebih dari 100</p>
+            <h4>3. Saldo Akun vs Pembelian</h4>
+            <img src="img/Saldo Akun vs Pembelian KMeans.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik terlihat bahwa cluster Pengguna Level tengah (ungu muda) dan cluster pengguna dengan kredit 
+                pembelian tinggi (pink) memiliki saldo yang besar, namun perbedaannya terlihat pada pembelian per akun. 
+                cluster Pengguna Level tengah (ungu muda) terlihat tidak banyak melakukan pembelian berbeda dengan luster 
+                pengguna dengan kredit pembelian tinggi (pink) yang banyak melakukan pembelian</p>
+            <h4>4. Batas Kredit Akun vs Pembelian per Akun</h4>
+            <img src="img/Batas Kredit Akun vs Pembelian per Akun KMeans.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik terlihat bahwa rata-rata cluster memiliki batas kredit akun kurang lebih 20000 serta terdapat 
+                beberapa yang lebih. Namun cluster Pengguna dengan kredit pembelian tinggi (pink) dengan batas kredit 
+                tersebut tetap melakukan banyak pembelian melebihi 10000 bahkan terdapat beberapa yang melebihi 30000</p>
+            <h3>Visualisasi Perbandingan antar Component PCA</h3>
+            <h4>1. PCA Component 1 vs PCA Component 2 Clusters</h4>
+            <img src="img/PCA Component 1 vs PCA Component 2 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>2. PCA Component 2 vs PCA Component 3 Clusters</h4>
+            <img src="img/PCA Component 2 vs PCA Component 3 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>3. PCA Component 3 vs PCA Component 4 Clusters</h4>
+            <img src="img/PCA Component 3 vs PCA Component 4 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>4. PCA Component 4 vs PCA Component 5 Clusters</h4>
+            <img src="img/PCA Component 4 vs PCA Component 5 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>5. PCA Component 5 vs PCA Component 6 Clusters</h4>
+            <img src="img/PCA Component 5 vs PCA Component 6 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>6. PCA Component 6 vs PCA Component 7 Clusters</h4>
+            <img src="img/PCA Component 6 vs PCA Component 7 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>7. PCA Component 2 vs PCA Component 5 Clusters</h4>
+            <img src="img/PCA Component 2 vs PCA Component 5 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>8. PCA Component 1 vs PCA Component 6 Clusters</h4>
+            <img src="img/PCA Component 1 vs PCA Component 6 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h4>9. PCA Component 2 vs PCA Component 7 Clusters</h4>
+            <img src="img/PCA Component 2 vs PCA Component 7 Clusters.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <h3>Cluster Pengguna Kartu Kredit dengan UMAP Application</h3>
+            <h4>1. Penarikan Tunai vs Pembelian Angsuran</h4>
+            <img src="img/Penarikan Tunai vs Pembelian Angsuran.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Pada hasil grafik bisa dilihat bahwa Pengguna yang bergantung pada uang muka yang ditunjukkan dengan warna 
+                hijau muda dapat melakukan banyak pembelian angsuran (cicilan) tanpa harus melakukan penarikan tunai atau 
+                mengambil uang muka menggunakan kredit.</p>
+            <p>Sedangkan, Pengguna dengan pembelian dan kredit besar yang ditunjukan dengan warna orange umumya memiliki 
+                penggunaan uang muka atau penarikan tunai yang lebih tinggi yang artinya ia sangat bergantung pada uang 
+                muka tunai walaupun berada di ujung bawah pembelian angsuran</p>
+            <h4>2. Pembelian vs Pembayaran</h4>
+            <img src="img/Pembelian vs Pembayaran UMAP.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Pada grafik terlihat bahwa pengguna yang bergantung pada uang muka (hijau muda) paling banyak melakukan 
+                pembelian dan pembayaran dengan jumlah melebihi 40000, sedangkan Pengguna dengan cicilan pembelian dan 
+                minimal kredit (warna merah) serta Pengguna dengan pembelian dan kredit besar (orange) hampir memiliki 
+                persebaran yang sama dimana keduanya memiliki pembayaran yang tinggi dengan kurang lebih 40000. Terakhir 
+                Pengguna normal (standard) dengan warna biru memiliki pembelian dan pembayan yang kecil yaitu kurang dari 
+                10000</p>
+            <h4>3. Pembelian Satu Kali (one off) vs Batas Kredit</h4>
+            <img src="img/Pembelian Satu Kali (one off) vs Batas Kredit UMAP.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik terlihat bahwa semua cluster atau bagian rata-rata memiliki batas kredit kurang lebih 24000 
+                dengan pembelian one off kurang lebih 11000. Namun pada cluster pengguna yang bergantung pada uang muka 
+                (hijau muda) terdapat beberapa pengguna dengan batas kredit lebih dari 24000 dan pembelian one off lebih 
+                dari 11000</p>
+            <h4>4. Saldo vs Minimal / Minimum Pembayaran</h4>
+            <img src="img/Saldo vs Minimum Pembayaran UMAP.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dari grafik dapat dilihat bahwa cluster Pengguna yang bergantung pada uang muka (hijau muda) memiliki saldo 
+                tinggi yang serupa dengan cluster pengguna dengan pembelian dan kredit besar (orange). Dapat dilihat bahwa 
+                cluster Pengguna yang bergantung pada uang muka (hijau muda) bagaimanapun memiliki pembayaran minimum yang 
+                lebih tinggi, hal ini sesuai karena cluster ini membeli paling banyak dibandingkan dengan yang lain.</p>
+            <h4>5. Pie Chart Jumlah Pengamatan per Segment</h4>
+            <img src="img/Jumlah Pengamatan per Segment.png" style="width: 550px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+            <p>Dengan menggunakan UMAP sebagai teknik pengurangan dimensi dengan skema K-Means yang sama, diperoleh 
+                cluster yang lebih seimbang daripada saat menggunakan PCA.</p>
+        </div>
+    </div>
+</body>
+</html>

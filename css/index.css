@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.navigasi_kiri img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 200px;
+    height: 80px;
+}
+
+.navigasi_kiri ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-position: inside;
+    background-color: #a2c04e;
+}
+
+.navigasi_kiri ul li{
+    float: left;
+}
+
+.navigasi_kiri ul li a{
+    display: block;
+    color: #272e16;
+    text-align: center;
+    padding: 14px 51px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigasi_kiri a:hover{
+    color: #f8ffe4;
+    font-weight: bold;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #c9f060;
+    max-width: 800px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: justify;
+    color: #272e16;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form li{
+    text-align: justify;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.form h1{
+    text-align: center;
+}
+
+.form h2{
+    text-align: center;
+}
+
+body {
+    background: #a2c04e;
+    font-family: "Roboto", sans-serif;
+}

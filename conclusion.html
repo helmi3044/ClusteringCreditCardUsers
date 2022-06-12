@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Prediksi Hujan di Australia</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="navigasi_kiri">
+            <img src="img/hacktiv8-dark.webp">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="cluster.html">Clusters</a></li>
+                <li><a href="index.html">Predict</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </div>
+        <h1>Conclusion</h1>
+        <p>Dari analisis yang telah kami lakukan, diperoleh kesimpulan sebagai berikut:</p>
+        <li>Pada analisa kali ini kami menggunakan model KMeans, PCA, dan bantuan UMAP Application untuk melakukan 
+            clustering pada data pengguna kartu kredit</li>
+        <li>Pada KMeans kami memilih 4 cluster berdasarkan pengamatan pada elbow method</li>
+        <li>Pada model PCA kami memilih menggunakan 7 component untuk dilakukan analisis guna mempertahankan 
+            setidaknya 80% dari varians yang ditangkap dalam data, kemudian dengan menggunakan UMAP Application kami 
+            melakukan reduksi jumlah component menjadi 2 dimensi</li>
+        <li>Alasan penggunaan UMAP Application yaitu karena UMAP bekerja dengan baik dalam menemukan kesamaan dan dapat 
+            mempertahankan struktur global data. Dengan menggunakan 2 component berdasarkan UMAP, kami memperoleh kelompok 
+            cluster yang lebih seimbang dan masih menemukan beberapa perbedaan besar di antara mereka.</li>
+        <li>Berdasarkan analisis kami dengan menggunakan elbow method, didapatkan jumlah cluster 4 merupakan jumlah yang 
+            optimal. Cluster atau label yang ada diantaranya yaitu cluster Pengguna yang Bergantung Pada Uang Muka 
+            sebanyak 31%, cluster Pengguna dengan Pembelian dan Kredit Besar sebanyak 30%, cluster Pengguna Normal 
+            (Standard) sebanyak 17%, cluster Pengguna dengan Cicilan Pembelian dan Minimal Kredit sebanyak 22%</li>
+        <li>Kemudian untuk prediksi cluster pelanggan kami menggunakan model random forest classifier dan didapatkan 
+            tingkat akurasinya yaitu 84%</li>
+        <li>Untuk melakukan prediksi, variabel dependen yang digunakan yaitu Saldo, PenarikanTunai, PembelianAngsuran, 
+            Pembelian, Pembayaran, PembelianOneoff, BatasKredit, MinimalPembayaran, dan JangkaWaktu. Sedangkan untuk 
+            variabel dependen atau target yang digunakan yaitu Labels</li>
+        <li>Pada analisis ini kami juga membuat beberapa visualisasi menggunakan lineplot, boxplot, histogram, pie chart, 
+            dan matriks korelasi (heatmap) dan juga kami melakukan beberapa contoh groupby dan query terhadap data yang 
+            ada</li>
+        <li>Untuk mengatasi missing value pada analisis ini kami menggunakan pengisian missing value dengan menggunakan 
+            median</li>
+    </div>
+
+</body>
+
+</html>
